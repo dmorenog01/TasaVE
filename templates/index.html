@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}TasaVE{% endblock %}
+
+{% block main %}
+    <!-- <div class="container-fluid content-box align-middle mb-4 mt-4">
+        <div class="flex-item">Anuncio</div>
+        <div class="flex-item">img</div>
+        <div class="flex-item"></div>
+    </div> -->
+
+    <div class="container-fluid content-box align-middle mb-4 mt-4">
+        <div class="flex-item">Tasa Bs/USD</div>
+        <div class="flex-item">BCV: {{ information.rate }}</div>
+        <div class="flex-item">{{ information.date }}</div>
+    </div>
+{% endblock %}
+        
+    
