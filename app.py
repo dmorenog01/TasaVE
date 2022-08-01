@@ -3,10 +3,11 @@ import requests
 
 app = Flask(__name__)
 API_URL = "https://bcv-api.herokuapp.com/"
+headers = {"Authorization": "Basic VGFzYVZFOmhvbGE1Mg=="}
 
 @app.route("/")
 def index():
-    api_response = requests.get(API_URL).json()
+    api_response = requests.get(API_URL, headers=headers).json()
     info = {
         "rate": api_response["rate"],
         "date": api_response["rate-date"]
