@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import requests
 
 app = Flask(__name__)
-API_URL = "https://bcv-api.herokuapp.com/"
+API_URL = "https://bcv-api-production.up.railway.app/"
 headers = {"Authorization": "Basic VGFzYVZFOmhvbGE1Mg=="}
 
 @app.route("/")
